@@ -10,30 +10,30 @@ class Cards extends Component {
         {
           id: 1,
           image: require("../../../assets/images/medTeam1.jpeg"),
-          name: "Name",
-          jobTitle: "role",
-          desc: "lorem",
+          name: "Dr. Adam Jonson",
+          jobTitle: "MEDICAL DIRECTOR",
+          desc: "Sample text. Click to select the text box. Click again or double click to start editing the text",
         },
         {
           id: 2,
           image: require("../../../assets/images/medTeam2.jpeg"),
-          name: "Name",
-          jobTitle: "role",
-          desc: "lorem",
+          name: "DR. Simon Larson",
+          jobTitle: "FAMILY DOCTOR",
+          desc: "Sample text. Click to select the text box. Click again or double click to start editing the text",
         },
         {
           id: 3,
           image: require("../../../assets/images/medTeam3.jpeg"),
-          name: "Name",
-          jobTitle: "role",
-          desc: "lorem",
+          name: "DR. Marry Hudson",
+          jobTitle: "HEMATOLOGIST",
+          desc: "Sample text. Click to select the text box. Click again or double click to start editing the text",
         },
       ],
     };
   }
   render() {
     return (
-      <div>
+      <div style={parentEl} className="blueLine">
         {this.state.medCard.map(item => {
           return (
             <Card
@@ -49,5 +49,9 @@ class Cards extends Component {
     );
   }
 }
-
+const parentEl = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+};
 export default Cards;
