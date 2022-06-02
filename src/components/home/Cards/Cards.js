@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "./Card";
 
-export class Cards extends Component {
+class Cards extends Component {
   constructor(props) {
     super(props);
 
